@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Music Site</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>🎵 My Music World</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Tracks</a>
+      <a href="#">About</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Feel the Beat</h2>
+    <p>Stream your favorite tunes anytime, anywhere.</p>
+  </section>
+
+  <section class="music-player">
+    <h2>Now Playing</h2>
+    <div class="track" id="track1">
+      <p>🎶 Track 1: Summer Vibes</p>
+      <audio id="audio1" src="track1.mp3"></audio>
+      <button onclick="playPause('audio1')">Play/Pause</button>
+    </div>
+
+    <div class="track" id="track2">
+      <p>🎶 Track 2: Chill Nights</p>
+      <audio id="audio2" src="track2.mp3"></audio>
+      <button onclick="playPause('audio2')">Play/Pause</button>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 My Music World. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
