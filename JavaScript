@@ -1,0 +1,20 @@
+function playPause(audioId) {
+    const audio = document.getElementById(audioId);
+  
+    // Pause all other audio elements
+
+    const allAudios = document.querySelectorAll("audio");
+    allAudios.forEach((a) => {
+      if (a.id !== audioId) {
+        a.pause();
+        a.currentTime = 0;
+      }
+    });
+  
+    if (audio.paused) {
+      audio.play();
+    } else {
+      audio.pause();
+    }
+  }
+  
